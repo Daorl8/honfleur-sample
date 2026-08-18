@@ -172,9 +172,10 @@ footer .demo2{font-size:.72rem;color:var(--khaki);margin-top:14px;letter-spacing
 body{padding-bottom:74px}
 
 /* reveal + a11y */
-.rv{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .5s cubic-bezier(.22,.61,.36,1),transform .5s cubic-bezier(.22,.61,.36,1)}
 .rv.in{opacity:1;transform:none}
 :focus-visible{outline:2px solid var(--khaki-d);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
 
 @media(min-width:768px){
  .menu{display:flex}
@@ -235,14 +236,14 @@ body{padding-bottom:74px}
         <a class="btn pri" href="https://naver.me/FdqZCj9d" target="_blank" rel="noopener">Reserve a table</a>
       </div>
     </div>
-    <div class="hero-photo rv"><img src="hero-toast.jpg" alt="Brioche french toast with berries and bacon" fetchpriority="high"></div>
+    <div class="hero-photo rv"><img width="1150" height="1150" src="hero-toast.jpg" alt="Brioche french toast with berries and bacon" fetchpriority="high"></div>
   </div>
 </section>
 
 <section class="sec about" id="about">
   <img class="stone" src="stone-1.png" alt="" style="width:130px;bottom:8%;left:-24px">
   <div class="wrap about-grid">
-    <div class="about-photo rv"><img src="space-interior.jpg" alt="Honfleur interior with warm daylight" loading="lazy"></div>
+    <div class="about-photo rv"><img width="920" height="1150" src="space-interior.jpg" alt="Honfleur interior with warm daylight" loading="lazy"></div>
     <div class="rv">
       <p class="sec-eyebrow">Bonjour</p>
       <h2 class="sec-title">A cozy corner<br>of <em>Normandy</em>.</h2>
@@ -260,26 +261,26 @@ body{padding-bottom:74px}
     <p class="sec-desc">French classics with a fusion, served warm, all day long.<span class="kr">아래는 대표 메뉴예요. 구성은 시즌·매장 상황에 따라 달라질 수 있어요.</span></p>
   </div>
   <div class="mgrid">
-    <article class="mcard rv"><div class="ph"><img src="menu-brioche.jpg" alt="Brioche French Toast" loading="lazy"></div><div class="tx"><div class="en">Brioche French Toast</div><div class="kr">브리오쉬 프렌치토스트</div><div class="price">18,000</div></div></article>
-    <article class="mcard rv"><div class="ph"><img src="menu-benedict2.jpg" alt="Smoked Salmon Eggs Benedict" loading="lazy"></div><div class="tx"><div class="en">Smoked Salmon Eggs Benedict</div><div class="kr">훈제연어 에그 베네딕트</div><div class="price">18,000</div></div></article>
-    <article class="mcard rv"><div class="ph"><img src="menu-pancake2.jpg" alt="Blueberry Pancakes" loading="lazy"></div><div class="tx"><div class="en">Blueberry Pancakes</div><div class="kr">블루베리 팬케이크</div><div class="price">18,000</div></div></article>
-    <article class="mcard rv"><div class="ph"><img src="menu-omelette.jpg" alt="Lemon Bacon Cheese Omelette" loading="lazy"></div><div class="tx"><div class="en">Lemon Bacon Cheese Omelette</div><div class="kr">레몬 베이컨 치즈 오믈렛</div><div class="price">18,000</div></div></article>
-    <article class="mcard rv"><div class="ph"><img src="menu-chicken.jpg" alt="Bonjour Chicken Rice Bowl" loading="lazy"></div><div class="tx"><div class="en">Bonjour Chicken Rice Bowl</div><div class="kr">봉쥬르 치킨 라이스볼</div><div class="price">18,000</div></div></article>
-    <article class="mcard rv"><div class="ph"><img src="menu-burrata.jpg" alt="Burrata Salad" loading="lazy"></div><div class="tx"><div class="en">Burrata Salad</div><div class="kr">부라타 치즈 샐러드</div><div class="price">16,000</div></div></article>
-    <article class="mcard rv"><div class="ph"><img src="menu-shrimp.jpg" alt="Shrimp Oil Pasta" loading="lazy"></div><div class="tx"><div class="en">Shrimp Oil Pasta</div><div class="kr">쉬림프 오일 파스타</div><div class="price">23,000</div></div></article>
-    <article class="mcard rv"><div class="ph"><img src="menu-octopus.jpg" alt="Octopus Cold Pasta" loading="lazy"></div><div class="tx"><div class="en">Octopus Cold Pasta</div><div class="kr">돌문어 콜드 파스타</div><div class="price">23,000</div></div></article>
+    <article class="mcard rv"><div class="ph"><img width="920" height="1150" src="menu-brioche.jpg" alt="Brioche French Toast" loading="lazy"></div><div class="tx"><div class="en">Brioche French Toast</div><div class="kr">브리오쉬 프렌치토스트</div><div class="price">18,000</div></div></article>
+    <article class="mcard rv"><div class="ph"><img width="1080" height="1080" src="menu-benedict2.jpg" alt="Smoked Salmon Eggs Benedict" loading="lazy"></div><div class="tx"><div class="en">Smoked Salmon Eggs Benedict</div><div class="kr">훈제연어 에그 베네딕트</div><div class="price">18,000</div></div></article>
+    <article class="mcard rv"><div class="ph"><img width="862" height="1150" src="menu-pancake2.jpg" alt="Blueberry Pancakes" loading="lazy"></div><div class="tx"><div class="en">Blueberry Pancakes</div><div class="kr">블루베리 팬케이크</div><div class="price">18,000</div></div></article>
+    <article class="mcard rv"><div class="ph"><img width="862" height="1150" src="menu-omelette.jpg" alt="Lemon Bacon Cheese Omelette" loading="lazy"></div><div class="tx"><div class="en">Lemon Bacon Cheese Omelette</div><div class="kr">레몬 베이컨 치즈 오믈렛</div><div class="price">18,000</div></div></article>
+    <article class="mcard rv"><div class="ph"><img width="1150" height="1150" src="menu-chicken.jpg" alt="Bonjour Chicken Rice Bowl" loading="lazy"></div><div class="tx"><div class="en">Bonjour Chicken Rice Bowl</div><div class="kr">봉쥬르 치킨 라이스볼</div><div class="price">18,000</div></div></article>
+    <article class="mcard rv"><div class="ph"><img width="1080" height="1080" src="menu-burrata.jpg" alt="Burrata Salad" loading="lazy"></div><div class="tx"><div class="en">Burrata Salad</div><div class="kr">부라타 치즈 샐러드</div><div class="price">16,000</div></div></article>
+    <article class="mcard rv"><div class="ph"><img width="1080" height="1080" src="menu-shrimp.jpg" alt="Shrimp Oil Pasta" loading="lazy"></div><div class="tx"><div class="en">Shrimp Oil Pasta</div><div class="kr">쉬림프 오일 파스타</div><div class="price">23,000</div></div></article>
+    <article class="mcard rv"><div class="ph"><img width="1150" height="1150" src="menu-octopus.jpg" alt="Octopus Cold Pasta" loading="lazy"></div><div class="tx"><div class="en">Octopus Cold Pasta</div><div class="kr">돌문어 콜드 파스타</div><div class="price">23,000</div></div></article>
   </div>
   <p class="note">Menus change with the season. Please check in store. &nbsp;메뉴는 시즌·매장 상황에 따라 달라질 수 있어요.</p>
 </section>
 <section class="sec dog" id="dogs">
   <div class="wrap">
-    <div class="rv" style="max-width:640px">
+    <div style="max-width:640px">
       <p class="sec-eyebrow">Bring your best friend</p>
       <h2 class="sec-title">Pets <em>welcome</em>.</h2>
       <p class="sec-desc">Brunch is better together. Honfleur is a pet-friendly café. Bring your best friend along for a slow morning by Namsan.<span class="kr">반려견 동반 가능한 카페예요. 강아지와 함께 남산 자락에서 느긋한 브런치를 즐겨보세요. (동반 가능 여부는 방문 전 매장에 확인해 주세요.)</span></p>
     </div>
-    <div class="rv" style="margin-top:34px;border-radius:3px;overflow:hidden;aspect-ratio:16/8;box-shadow:0 24px 50px -30px rgba(0,0,0,.6)">
-      <img src="dog-brunch.jpg" alt="A dog beside a brunch platter at Honfleur" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+    <div style="margin-top:34px;border-radius:3px;overflow:hidden;aspect-ratio:16/8;box-shadow:0 24px 50px -30px rgba(0,0,0,.6)">
+      <img width="1150" height="1150" src="dog-brunch.jpg" alt="A dog beside a brunch platter at Honfleur" loading="lazy" style="width:100%;height:100%;object-fit:cover">
     </div>
   </div>
 </section>
@@ -292,14 +293,14 @@ body{padding-bottom:74px}
     <p class="sec-desc">Pale walls, white pebbled floors and soft daylight. A calm little room to slow down in.<span class="kr">가게 내부 사진입니다.</span></p>
   </div>
   <div class="gal">
-    <a href="exterior.jpg" target="_blank" rel="noopener"><img src="exterior.jpg" alt="Honfleur storefront" loading="lazy"></a>
-    <a href="space-green.jpg" target="_blank" rel="noopener"><img src="space-green.jpg" alt="Green counter interior" loading="lazy"></a>
-    <a href="space-pendant.jpg" target="_blank" rel="noopener"><img src="space-pendant.jpg" alt="Table under a pendant light" loading="lazy"></a>
-    <a href="space-gallery.jpg" target="_blank" rel="noopener"><img src="space-gallery.jpg" alt="Gallery wall and long table" loading="lazy"></a>
-    <a href="food-salmon.jpg" target="_blank" rel="noopener"><img src="food-salmon.jpg" alt="Brunch by the window" loading="lazy"></a>
-    <a href="food-platter.jpg" target="_blank" rel="noopener"><img src="food-platter.jpg" alt="Brunch platter close up" loading="lazy"></a>
-    <a href="food-benedict.jpg" target="_blank" rel="noopener"><img src="food-benedict.jpg" alt="Signature strawberry shake" loading="lazy"></a>
-    <a href="food-bowl.jpg" target="_blank" rel="noopener"><img src="food-bowl.jpg" alt="Seasonal brunch bowl" loading="lazy"></a>
+    <a href="exterior.jpg" target="_blank" rel="noopener"><img width="1150" height="568" src="exterior.jpg" alt="Honfleur storefront" loading="lazy"></a>
+    <a href="space-green.jpg" target="_blank" rel="noopener"><img width="862" height="1150" src="space-green.jpg" alt="Green counter interior" loading="lazy"></a>
+    <a href="space-pendant.jpg" target="_blank" rel="noopener"><img width="920" height="1150" src="space-pendant.jpg" alt="Table under a pendant light" loading="lazy"></a>
+    <a href="space-gallery.jpg" target="_blank" rel="noopener"><img width="1150" height="1150" src="space-gallery.jpg" alt="Gallery wall and long table" loading="lazy"></a>
+    <a href="food-salmon.jpg" target="_blank" rel="noopener"><img width="920" height="1150" src="food-salmon.jpg" alt="Brunch by the window" loading="lazy"></a>
+    <a href="food-platter.jpg" target="_blank" rel="noopener"><img width="920" height="1150" src="food-platter.jpg" alt="Brunch platter close up" loading="lazy"></a>
+    <a href="food-benedict.jpg" target="_blank" rel="noopener"><img width="920" height="1150" src="food-benedict.jpg" alt="Signature strawberry shake" loading="lazy"></a>
+    <a href="food-bowl.jpg" target="_blank" rel="noopener"><img width="1150" height="1150" src="food-bowl.jpg" alt="Seasonal brunch bowl" loading="lazy"></a>
   </div>
 </section>
 
@@ -315,7 +316,7 @@ body{padding-bottom:74px}
         <div class="vrow"><div class="k">Reserve</div><div class="v">2–8 guests · walk-in when full<span class="kr">예약 2~8명 · 10인 이상 단체는 매장 유선 문의</span></div></div>
         <div class="vrow"><div class="k">Call</div><div class="v"><a href="tel:0507-1361-3706">0507-1361-3706</a></div></div>
       </div>
-      <div class="visit-photo rv"><img src="exterior.jpg" alt="Honfleur storefront" loading="lazy" style="object-position:center top"></div>
+      <div class="visit-photo rv"><img width="1150" height="568" src="exterior.jpg" alt="Honfleur storefront" loading="lazy" style="object-position:center top"></div>
     </div>
     <div class="rv" style="margin-top:34px"><a class="btn pri" style="margin:0 12px 12px 0" href="https://naver.me/FdqZCj9d" target="_blank" rel="noopener">Reserve on Naver</a><a class="btn ghost" href="https://www.instagram.com/honfleur_namsan/" target="_blank" rel="noopener">Instagram</a></div>
   </div>
@@ -371,6 +372,6 @@ body{padding-bottom:74px}
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
 })();
 </script>
-<script>setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in');});},1500);</script>
+<script>setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in');});},700);</script>
 </body>
 </html>
